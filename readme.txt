@@ -9,6 +9,11 @@ An avatar is a fictional character representing the user, although it would be
 easy to reformat this to have other purposes for layering images together and producing
 a single image with the PHP GD library.
 
+COPYRIGHT:
+This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 
+International License. To view a copy of this license, 
+visit http://creativecommons.org/licenses/by-sa/4.0/.
+
 /*
 *	Authors - Chronologically
 */
