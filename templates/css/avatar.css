@@ -1,0 +1,13 @@
+/**
+*   CSS Class for Avatar
+**/
+.thumbnail a:hover {
+    cursor: pointer;
+    cursor: hand;
+}
+
+#user-img {
+    vertical-align: middle;
+    text-align: center;
+    align-content: center;
+}

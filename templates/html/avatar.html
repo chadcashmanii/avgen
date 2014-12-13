@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Avatar Generator</title>
+    <meta name="description" content="">
+    <meta name="title" content="Avatar Generator">
+    <meta name="keywords" content="">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="../templates/css/bootstrap.css">
+    <link rel="stylesheet" href="../templates/css/avatar.css">
+  </head>
+  <body>
+    <div class="row">
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+        <div class="jumbotron">
+          <div class="container-fluid">
+            <h1>Avatar Generator</h1>
+            <p>
+              Produces dynamic image from multiple sources in a layered fashion
+              through an item/user-grouped database. Scroll down for an example.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
+        <div class="container-fluid">
+          <p class="text-center"><span id="user-img-space"><img src="images/users/user_1.png" alt="User 1" style="max-height:390px;" id="user-img" class="img img-responsive"></span></p>
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-9 col-md-9 col-lg-9">
+        <div id="avatar-loading" class="progress">
+          <div role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width:100%" class="progress-bar progress-bar-striped progress-bar-info active"></div>
+        </div>
+        <div role="tabpanel">
+          <div class="row">
+            <div class="col-xs-4 col-sm-4 col-md-3 col-lg-3">
+              <!--Nav tabs-->
+              <ul role="tablist" class="nav nav-pills nav-stacked">
+                <li role="presentation" class="active"><a href="#tools" aria-controls="home" role="tab" data-toggle="tab">Tools</a></li>
+                <li role="presentation"><a href="#shirts" aria-controls="profile" role="tab" data-toggle="tab">Shirts</a></li>
+                <li role="presentation"><a href="#pants" aria-controls="messages" role="tab" data-toggle="tab">Pants</a></li>
+                <li role="presentation"><a href="#shoes" aria-controls="settings" role="tab" data-toggle="tab">Shoes</a></li>
+              </ul>
+            </div>
+            <div class="col-xs-8 col-sm-8 col-md-9 col-lg-9">
+              <!-- Tab panes-->
+              <div class="tab-content">
+                <div role="tabpanel" id="tools" class="tab-pane active">
+                  <div class="container-fluid">
+                    <p class="text-center">
+                       Please use the navigation on the left to
+                       add clothes to the avatar<br>
+                    </p>
+                    <div class="row"></div>
+                    <div class="input-group">
+                      <select id="equipped-list" class="form-control">
+                      </select><span class="input-group-btn"><a id="remove-item" title="Remove Item" class="btn btn-primary btn-block"><span class="hidden-xs">Remove Item</span><span class="hidden-sm hidden-md hidden-lg"><span class="glyphicon glyphicon-minus-sign"></span></span></a></span>
+                    </div><br><a id="remove-all" title="Remove All Items" class="btn btn-danger btn-block"> Remove All</a>
+                  </div>
+                </div>
+                <div role="tabpanel" id="shirts" class="tab-pane">...</div>
+                <div role="tabpanel" id="pants" class="tab-pane">...</div>
+                <div role="tabpanel" id="shoes" class="tab-pane">...</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="../templates/js/jquery-2.1.1.min.js"></script>
+    <script src="../templates/js/bootstrap.js"></script>
+    <script src="../templates/js/avatar.js"></script>
+  </body>
+</html>
